@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Instagram Debloater",
+  "version": "1.0.0",
+  "description": "Hides doom-scrolling and some customizations",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "Instagram Debloater",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*", "https://instagram.com/*"],
+      "css": ["styles.css"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

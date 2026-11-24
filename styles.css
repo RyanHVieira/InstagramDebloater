@@ -1,0 +1,102 @@
+html.ig-sem-feed-home.ig-sem-feed-block-home main [role="feed"],
+html.ig-sem-feed-home.ig-sem-feed-block-home main article,
+html.ig-sem-feed-home.ig-sem-feed-block-home [role="main"] [role="feed"],
+html.ig-sem-feed-home.ig-sem-feed-block-home [role="main"] article,
+html.ig-sem-feed-home.ig-sem-feed-block-home [role="feed"],
+html.ig-sem-feed-home.ig-sem-feed-block-home [data-visualcompletion="loading-state"],
+html.ig-sem-feed-explore.ig-sem-feed-block-explore main article,
+html.ig-sem-feed-explore.ig-sem-feed-block-explore [role="main"] article,
+html.ig-sem-feed-explore.ig-sem-feed-block-explore main [role="feed"],
+html.ig-sem-feed-explore.ig-sem-feed-block-explore [role="main"] [role="feed"],
+html.ig-sem-feed-explore.ig-sem-feed-block-explore main a[href^="/p/"],
+html.ig-sem-feed-explore.ig-sem-feed-block-explore main a[href^="/reel/"],
+html.ig-sem-feed-explore.ig-sem-feed-block-explore a[href^="/p/"],
+html.ig-sem-feed-explore.ig-sem-feed-block-explore a[href^="/reel/"],
+html.ig-sem-feed-explore.ig-sem-feed-block-explore [role="main"] a[href^="/p/"],
+html.ig-sem-feed-explore.ig-sem-feed-block-explore [role="main"] a[href^="/reel/"],
+html.ig-sem-feed-explore.ig-sem-feed-block-explore main div:has(> a[href^="/p/"], > a[href^="/reel/"]),
+html.ig-sem-feed-explore.ig-sem-feed-block-explore [role="main"] div:has(> a[href^="/p/"], > a[href^="/reel/"]),
+html.ig-sem-feed-explore.ig-sem-feed-block-explore main [data-visualcompletion="loading-state"],
+html.ig-sem-feed-explore.ig-sem-feed-block-explore [role="main"] [data-visualcompletion="loading-state"],
+html.ig-sem-feed-explore.ig-sem-feed-block-explore main [role="progressbar"],
+html.ig-sem-feed-explore.ig-sem-feed-block-explore [role="main"] [role="progressbar"],
+html.ig-sem-feed-explore.ig-sem-feed-block-explore main [aria-label="Loading..."],
+html.ig-sem-feed-explore.ig-sem-feed-block-explore [role="main"] [aria-label="Loading..."],
+html.ig-sem-feed-block-reels a[href^="/reels"],
+html.ig-sem-feed-block-reels a[href*="/reels/"] {
+  display: none !important;
+}
+
+html.ig-sem-feed-hide-footer nav:has(> ul > li > a[href*="about.instagram.com"]):has(> ul > li > a[href*="help.instagram.com"]) > ul {
+  display: none !important;
+}
+
+.ig-sem-feed-suggested-hidden {
+  display: none !important;
+}
+
+html.ig-sem-feed-home nav a,html.ig-sem-feed-home nav button, html.ig-sem-feed-home [role="navigation"] a, html.ig-sem-feed-home [role="navigation"] button {
+  min-height: 52px;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+  font-size: 16px;
+}
+
+html.ig-sem-feed-home nav a svg,html.ig-sem-feed-home nav button svg, html.ig-sem-feed-home [role="navigation"] a svg, html.ig-sem-feed-home [role="navigation"] button svg {
+  width: 26px;
+  height: 26px;
+}
+
+nav:has(> ul > li > a[href*="about.instagram.com"]):has(> ul > li > a[href*="help.instagram.com"]) > ul {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 0 !important;
+  margin: 2px 0 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+nav:has(> ul > li > a[href*="about.instagram.com"]):has(> ul > li > a[href*="help.instagram.com"]) > ul > li {
+  display: block !important;
+  box-sizing: border-box !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 14px !important;
+}
+
+nav:has(> ul > li > a[href*="about.instagram.com"]):has(> ul > li > a[href*="help.instagram.com"]) > ul > li > a,
+nav:has(> ul > li > a[href*="about.instagram.com"]):has(> ul > li > a[href*="help.instagram.com"]) > ul > li > a > span {
+  display: inline-block !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 14px !important;
+}
+
+html.ig-sem-feed-explore.ig-sem-feed-block-explore main::after, html.ig-sem-feed-explore.ig-sem-feed-block-explore [role="main"]::after {
+  content: ":)";
+  box-sizing: border-box;
+  display: flex;
+  min-height: min(60vh, 680px);
+  width: min(100%, 1080px);
+  align-items: center;
+  justify-content: center;
+  margin: 24px auto;
+  padding: 48px;
+  color: #ffffff;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: clamp(30px, 3.2vw, 44px);
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  html.ig-sem-feed-explore.ig-sem-feed-block-explore main::after, html.ig-sem-feed-explore.ig-sem-feed-block-explore [role="main"]::after {
+    min-height: 48vh;
+    padding: 24px;
+    font-size: 30px;
+  }
+}

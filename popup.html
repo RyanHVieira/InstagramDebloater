@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Instagram Debloater</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="popup">
+      <header>
+        <div class="brand-mark" aria-hidden="true">I</div>
+        <div>
+          <h1>Instagram Debloater</h1>
+          <p>Disable features</p>
+        </div>
+      </header>
+
+      <section class="options" aria-label="Controles de conteúdo">
+        <label class="option">
+          <span class="option-icon" aria-hidden="true">⌂</span>
+          <span class="option-copy"><strong>Hide home feed</strong><small>Less Doom-Scrolling</small></span>
+          <input type="checkbox" data-setting="homeFeed" aria-label="Hide home feed">
+          <span class="switch" aria-hidden="true"></span>
+        </label>
+        <label class="option">
+          <span class="option-icon" aria-hidden="true">▦</span>
+          <span class="option-copy"><strong>Hide search page feed</strong><small>Less Doom-Scrolling</small></span>
+          <input type="checkbox" data-setting="exploreFeed" aria-label="Hide search page feed">
+          <span class="switch" aria-hidden="true"></span>
+        </label>
+        <label class="option">
+          <span class="option-icon" aria-hidden="true">▶</span>
+          <span class="option-copy"><strong>Hide Reels</strong><small>Less Doom-Scrolling</small></span>
+          <input type="checkbox" data-setting="reels" aria-label="Hide Reels">
+          <span class="switch" aria-hidden="true"></span>
+        </label>
+        <label class="option">
+          <span class="option-icon" aria-hidden="true">◉</span>
+          <span class="option-copy"><strong>Hide right-side links</strong></span>
+          <input type="checkbox" data-setting="hideFooterLinks" aria-label="Hide right-side links">
+          <span class="switch" aria-hidden="true"></span>
+        </label>
+        <label class="option">
+          <span class="option-icon" aria-hidden="true">♙</span>
+          <span class="option-copy"><strong>Hide suggested people</strong></span>
+          <input type="checkbox" data-setting="hideSuggestedPeople" aria-label="Hide suggested people">
+          <span class="switch" aria-hidden="true"></span>
+        </label>
+      </section>
+
+      <footer><span class="status-dot"></span><span id="status">Settings saved</span></footer>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
